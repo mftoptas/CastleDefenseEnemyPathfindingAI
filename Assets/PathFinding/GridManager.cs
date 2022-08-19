@@ -66,9 +66,9 @@ public class GridManager : MonoBehaviour
 
     void CreateGrid()
     {
-        for(int x = 0; x < gridSize.x; x++)
+        for(int x = -12; x < gridSize.x; x++) // x = -12 because the map i created is that begins from x = -11
         {
-            for(int y = 0; y < gridSize.y; y++)
+            for(int y = -3; y < gridSize.y; y++) // y = -3 because the map i created is that begins from x = -3
             {
                 Vector2Int coordinates = new Vector2Int(x,y);
                 grid.Add(coordinates, new Node(coordinates, true));
